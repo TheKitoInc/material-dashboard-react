@@ -25,3 +25,8 @@ package-lock.json
 yarn.lock
 
 commit.sh
+log
+tmp
+.php-cs-fixer.cache
+node_modules
+/log
