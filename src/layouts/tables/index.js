@@ -14,26 +14,26 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
+import Grid from '@mui/material/Grid'
+import Card from '@mui/material/Card'
 
 // Material Dashboard 2 React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from 'components/MDBox'
+import MDTypography from 'components/MDTypography'
 
 // Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import DataTable from "examples/Tables/DataTable";
+import DashboardLayout from 'examples/LayoutContainers/DashboardLayout'
+import DashboardNavbar from 'examples/Navbars/DashboardNavbar'
+import Footer from 'examples/Footer'
+import DataTable from 'examples/Tables/DataTable'
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import authorsTableData from 'layouts/tables/data/authorsTableData'
+import projectsTableData from 'layouts/tables/data/projectsTableData'
 
-function Tables() {
-  const { columns, rows } = authorsTableData();
-  const { columns: pColumns, rows: pRows } = projectsTableData();
+function Tables () {
+  const { columns, rows } = authorsTableData()
+  const { columns: pColumns, rows: pRows } = projectsTableData()
 
   return (
     <DashboardLayout>
@@ -47,12 +47,12 @@ function Tables() {
                 mt={-3}
                 py={3}
                 px={2}
-                variant="gradient"
-                bgColor="info"
-                borderRadius="lg"
-                coloredShadow="info"
+                variant='gradient'
+                bgColor='info'
+                borderRadius='lg'
+                coloredShadow='info'
               >
-                <MDTypography variant="h6" color="white">
+                <MDTypography variant='h6' color='white'>
                   Authors Table
                 </MDTypography>
               </MDBox>
@@ -74,12 +74,12 @@ function Tables() {
                 mt={-3}
                 py={3}
                 px={2}
-                variant="gradient"
-                bgColor="info"
-                borderRadius="lg"
-                coloredShadow="info"
+                variant='gradient'
+                bgColor='info'
+                borderRadius='lg'
+                coloredShadow='info'
               >
-                <MDTypography variant="h6" color="white">
+                <MDTypography variant='h6' color='white'>
                   Projects Table
                 </MDTypography>
               </MDBox>
@@ -98,7 +98,7 @@ function Tables() {
       </MDBox>
       <Footer />
     </DashboardLayout>
-  );
+  )
 }
 
-export default Tables;
+export default Tables

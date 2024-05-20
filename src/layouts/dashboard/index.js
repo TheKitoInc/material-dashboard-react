@@ -14,29 +14,29 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
-import Grid from "@mui/material/Grid";
+import Grid from '@mui/material/Grid'
 
 // Material Dashboard 2 React components
-import MDBox from "components/MDBox";
+import MDBox from 'components/MDBox'
 
 // Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
-import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
-import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
+import DashboardLayout from 'examples/LayoutContainers/DashboardLayout'
+import DashboardNavbar from 'examples/Navbars/DashboardNavbar'
+import Footer from 'examples/Footer'
+import ReportsBarChart from 'examples/Charts/BarCharts/ReportsBarChart'
+import ReportsLineChart from 'examples/Charts/LineCharts/ReportsLineChart'
+import ComplexStatisticsCard from 'examples/Cards/StatisticsCards/ComplexStatisticsCard'
 
 // Data
-import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
+import reportsBarChartData from 'layouts/dashboard/data/reportsBarChartData'
+import reportsLineChartData from 'layouts/dashboard/data/reportsLineChartData'
 
 // Dashboard components
-import Projects from "layouts/dashboard/components/Projects";
-import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
+import Projects from 'layouts/dashboard/components/Projects'
+import OrdersOverview from 'layouts/dashboard/components/OrdersOverview'
 
-function Dashboard() {
-  const { sales, tasks } = reportsLineChartData;
+function Dashboard () {
+  const { sales, tasks } = reportsLineChartData
 
   return (
     <DashboardLayout>
@@ -46,14 +46,14 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
-                color="dark"
-                icon="weekend"
-                title="Bookings"
+                color='dark'
+                icon='weekend'
+                title='Bookings'
                 count={281}
                 percentage={{
-                  color: "success",
-                  amount: "+55%",
-                  label: "than lask week",
+                  color: 'success',
+                  amount: '+55%',
+                  label: 'than lask week'
                 }}
               />
             </MDBox>
@@ -61,13 +61,13 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
-                icon="leaderboard"
+                icon='leaderboard'
                 title="Today's Users"
-                count="2,300"
+                count='2,300'
                 percentage={{
-                  color: "success",
-                  amount: "+3%",
-                  label: "than last month",
+                  color: 'success',
+                  amount: '+3%',
+                  label: 'than last month'
                 }}
               />
             </MDBox>
@@ -75,14 +75,14 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
-                color="success"
-                icon="store"
-                title="Revenue"
-                count="34k"
+                color='success'
+                icon='store'
+                title='Revenue'
+                count='34k'
                 percentage={{
-                  color: "success",
-                  amount: "+1%",
-                  label: "than yesterday",
+                  color: 'success',
+                  amount: '+1%',
+                  label: 'than yesterday'
                 }}
               />
             </MDBox>
@@ -90,14 +90,14 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
-                color="primary"
-                icon="person_add"
-                title="Followers"
-                count="+91"
+                color='primary'
+                icon='person_add'
+                title='Followers'
+                count='+91'
                 percentage={{
-                  color: "success",
-                  amount: "",
-                  label: "Just updated",
+                  color: 'success',
+                  amount: '',
+                  label: 'Just updated'
                 }}
               />
             </MDBox>
@@ -108,10 +108,10 @@ function Dashboard() {
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsBarChart
-                  color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
+                  color='info'
+                  title='website views'
+                  description='Last Campaign Performance'
+                  date='campaign sent 2 days ago'
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -119,14 +119,14 @@ function Dashboard() {
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsLineChart
-                  color="success"
-                  title="daily sales"
+                  color='success'
+                  title='daily sales'
                   description={
                     <>
                       (<strong>+15%</strong>) increase in today sales.
                     </>
                   }
-                  date="updated 4 min ago"
+                  date='updated 4 min ago'
                   chart={sales}
                 />
               </MDBox>
@@ -134,10 +134,10 @@ function Dashboard() {
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsLineChart
-                  color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
+                  color='dark'
+                  title='completed tasks'
+                  description='Last Campaign Performance'
+                  date='just updated'
                   chart={tasks}
                 />
               </MDBox>
@@ -157,7 +157,7 @@ function Dashboard() {
       </MDBox>
       <Footer />
     </DashboardLayout>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard
